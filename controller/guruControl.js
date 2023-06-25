@@ -2,11 +2,12 @@ const db = require('../db/koneksi');
 const response = require('../response');
 
 const getGuru = (res) => {
-  const sql = 'SELECT * FROM guru';
-  db.query(sql, (err, fields) => {
-    if (err) throw err;
-    response(200, fields, 'guru get list ', res);
-  });
+  res.send("guru nih bos")
+  // const sql = 'SELECT * FROM guru';
+  // db.query(sql, (err, fields) => {
+  //   if (err) throw err;
+  //   response(200, fields, 'guru get list ', res);
+  // });
 };
 
 ////getMatapelajaran->input materi dan tugas
